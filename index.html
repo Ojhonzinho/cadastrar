@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Produto</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <nav class="nav-lateral">
+      <ul>
+        <li>Dashboard</li>
+        <li class="ativo">Produtos</li>
+        <li>Estoque</li>
+        <li>Vendas</li>
+        <li>Fornecedores</li>
+      </ul>
+    </nav>
+    
+    <main class="main-content">
+      <div class="top-buttons">
+        <a href="../nexus/index.html"><button class="btn active">Cadastrar</button></a>
+        <a href="../nexus.2.0/index.html"><button class="btn">Consultar</button></a>
+      </div>
+
+      <form id="form-produto">
+    
+        <section class="form-dados">
+          <h3>Dados básicos</h3>
+          <div class="input-group">
+            <input type="text" placeholder="Nome do produto" />
+            <input type="text" placeholder="Cod. interno" />
+            <select>
+              <option selected disabled>Categoria</option>
+            </select>
+            <select>
+              <option selected disabled>Fornecedor</option>
+            </select>
+            <input type="text" placeholder="Cod. de barras" />
+          </div>
+        </section>
+
+        <section class="form-preco">
+          <h3>Formação de preço</h3>
+          <div class="input-group">
+            <input type="number" placeholder="Custo Líquido" />
+            <input type="number" placeholder="Custo Bruto" />
+            <input type="number" placeholder="Preço de venda" />
+            <input type="number" placeholder="Taxa de Lucro %" />
+          </div>
+        </section>
+
+        <section class="form-unidade">
+          <h3>Unidade</h3>
+          <div class="input-group">
+            <select>
+              <option selected disabled>Unidade de venda</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="form-fiscal">
+          <h3>Dados fiscais</h3>
+          <div class="input-group">
+            <input type="text" placeholder="Origem ICMS" />
+            <input type="text" placeholder="NCM" />
+          </div>
+        </section>
+
+        <button type="submit" class="btn-primary">Cadastrar</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
